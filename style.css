@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+
+ul {
+    height: 25px;
+    /*Altura*/
+    width: 95%;
+    /*Largura*/
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: fixed;
+    /*Para fixar algo na tela*/
+
+}
+
+.img-topo {
+    height: 25px;
+    /*Altura */
+}
+
+video {
+    width: 100vw;
+    /*vw é eu pegar minha tela e dividir em 100 pedaços, ou seja 100vw é a tela toda, eu poderia também colocar 100%*/
+    min-height: 80vh;
+    /*É a mesma coisa que o vw só que pra altura*/
+}
+
+.capa {
+    position: absolute;
+    bottom: 25%;
+    /* TOP - CIMA, BOTTOM - BAIXO, LRFT - ESQUERDA, RIGHT - DIREITA */
+    left: 5%;
+    width: 35%;
+    z-index: 3;
+    /*Define quem fica na frente de quem*/
+}
+
+.capa-titulo {
+    color: white;
+    font-size: 80px;
+    /*Tamanho da fonte*/
+    margin-bottom: 5px;
+    /*Margem embaixo*/
+    font-weight: bold;
+    /*Grosura da fonte*/
+}
+
+.capa-descricao {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link-assistir {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    /*10px em cima e embaixo e dos lados 20px*/
+    border-radius: 4px;
+    /*Aredondar as bordinhas do botão*/
+    cursor: pointer;
+    /*Mãozinha no lugar da seta*/
+}
+
+.link-info {
+    color: black;
+    background-color: rgba(255, 225, 255, 0.35);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.imagem-carrossel {
+    height: 150px;
+}
+
+
+/*
+Nas classes usamos .
+E quando queremos usar ID colocamos #
+*/
+#carouselExampleControls {
+    background-color: transparent;
+    position: absolute;
+    /*Posso falar a posição absoluta, mas ele pode ter a referência da tela ou da caixa que ele está dentro.*/
+    bottom: 10px;
+    left: 50px;
+}
+
+.titulo-carrossel {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.botao-som {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*o rgba dfa pra deixar a cor um pouco transparente, nesse caso a trtansparência é o 0.8*/
+}
+
+
+.modal-conteudo {
+    background-color: #181818;
+    margin: 30px auto; /*Quando eu coloco 2 valores o primeiro aplica e cima e embaixo e o segundo dos lados, quando eu coloco margem autmatca ele deixa o elemento no meio */
+    padding: 20px;
+    width: 60%;
+    color: white;
+}
